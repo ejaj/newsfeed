@@ -39,6 +39,7 @@ And navigate to `http://127.0.0.1:8000/`.
 - Database: PostgreSQL
 - Redis as a Message Broker
 ```
+Chage the database namd name and password from settings.py
 
 ### Phase 1 location
 ```sh
