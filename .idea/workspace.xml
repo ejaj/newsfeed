@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="954ab120-50ac-4101-8f71-51db7bf92e0b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0002_usernewssetting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0003_auto_20210319_1525.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0004_auto_20210319_1639.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0005_auto_20210319_1656.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0002_news_description.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0003_auto_20210320_0501.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0004_news_source_url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0005_auto_20210320_0507.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0006_auto_20210320_2312.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0007_newsnotification.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0008_auto_20210321_0011.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/news/migrations/0009_auto_20210321_0013.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/forms.py" afterPath="$PROJECT_DIR$/accounts/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +40,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-228">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="380">
+                <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -135,9 +143,9 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -627,7 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -677,14 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-257">
@@ -715,9 +714,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-228">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="380">
+            <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

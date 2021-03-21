@@ -31,7 +31,7 @@ Once `pip` has finished downloading the dependencies:
 (env)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000/`.
-
+To get initial data run `http://127.0.0.1:8000/initial_news_api`
 
 ## Dependencies
 
@@ -39,7 +39,7 @@ And navigate to `http://127.0.0.1:8000/`.
 - Database: PostgreSQL
 - Redis as a Message Broker
 ```
-Chage the database namd name and password from settings.py
+Change the database namd name and password from settings.py
 
 ### Phase 1 location
 ```sh
