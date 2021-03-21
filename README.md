@@ -31,7 +31,7 @@ Once `pip` has finished downloading the dependencies:
 (env)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000/`.
-To get initial data run `http://127.0.0.1:8000/initial_news_api`
+To get initial data browse `http://127.0.0.1:8000/initial_news_api`
 
 ## Dependencies
 
