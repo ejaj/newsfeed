@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form class="form-signin" method="post" style="width: 100%">
+        {% csrf_token %}
+        <h1 class="h3 mb-3 font-weight-normal">Please sing in</h1>
+        <hr/>
+        {% for field in form %}
+            {{ field.label_tag }}<br>
+            {{ field }}
+            {% if field.help_text %}
+                <small style="color: grey">{{ field.help_text }}</small>
+            {% endif %}
+
+            {% for error in field.errors %}
+                <p style="color: red">{{ error }}</p>
+            {% endfor %}
+        {% endfor %}
+        <a href="/accounts/password_reset" class="text-center">Forget Password?</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+    <p class="text-center">If you already have an account, <a href="/accounts/signup">Sign up</a> instead.</p>
+{% endblock %}

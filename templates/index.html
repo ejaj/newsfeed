@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">
+                Top News
+            </h3>
+            {% if top_headings %}
+                {% for top_heading in top_headings %}
+                    <div class="blog-post">
+                        <h2 class="blog-post-title"><a style="color: inherit; text-decoration: none"
+                                                       href="{{ top_heading.url }}">
+                            {{ top_heading.title }}
+                        </a></h2>
+                        <p class="blog-post-meta">{{ top_heading.publishedAt }} by
+                            <a href="#">{{ top_heading.author }}</a>
+                            Sources:
+                            {% if top_heading.source_url != None %}
+                                <a href="{{ top_heading.source_url }}" target="_blank">{{ top_heading.source_name }}</a>
+                            {% else %}
+                                <a href="#">{{ top_heading.source_name }}</a>
+                            {% endif %}
+
+                        </p>
+                        <div class="row">
+
+                            <div class="col-2">
+                                <img src="{{ top_heading.urlToImage }}" alt="..." class="img-thumbnail">
+                            </div>
+                            <div class="col-8">
+                                <a style="color: inherit; text-decoration: none" href="{{ top_heading.url }}">
+                                    {% autoescape off %}
+                                        <p>{{ top_heading.description }}</p>
+                                    {% endautoescape %}
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div><!-- /.blog-post -->
+                {% endfor %}
+            {% endif %}
+            {% if top_headings.has_other_pages %}
+                <ul class="pagination">
+                    {% if top_headings.has_previous %}
+                        <li><a href="?page={{ top_headings.previous_page_number }}">&laquo;</a></li>
+                    {% else %}
+                        <li class="disabled"><span>&laquo;</span></li>
+                    {% endif %}
+                    {% for i in top_headings.paginator.page_range %}
+                        {% if top_headings.number == i %}
+                            <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                        {% else %}
+                            <li><a href="?page={{ i }}">{{ i }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if top_headings.has_next %}
+                        <li><a href="?page={{ top_headings.next_page_number }}">&raquo;</a></li>
+                    {% else %}
+                        <li class="disabled"><span>&raquo;</span></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+            <div class="p-3 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">Personalized newsfeed portal <em></em> You’ll create a personalized feed for a user,
+                    which he can modify based
+                    on available settings.</p>
+            </div>
+            <div class="p-3">
+                <h4 class="font-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+{% endblock %}
+
